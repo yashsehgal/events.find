@@ -1,7 +1,46 @@
 @import url("/src/variables.css");
 body {
-  max-width: 1400px;
+  max-width: 50%;
+  min-width: 10%;
   margin: auto;
   margin-top: 2em;
+  text-align: center;
+}
+
+.event_card {
+  background-color: white;
+  font-family: var(--general-font-family);
+  width: 100%;
+  -webkit-box-shadow: 12px 24px 72px #dadada;
+          box-shadow: 12px 24px 72px #dadada;
+  margin-top: 2em;
+  padding: 2em;
+  line-height: 2em;
+}
+
+.event_card:hover {
+  -webkit-box-shadow: 12px 24px 120px #a9c4ff;
+          box-shadow: 12px 24px 120px #a9c4ff;
+}
+
+.category {
+  font-family: var(--general-description-font);
+}
+
+#learn-more-button {
+  margin-top: 2em;
+  color: white;
+  text-decoration: none;
+  background-color: #0048e2;
+  padding: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#learn-more-button:hover {
+  color: #0048e2;
+  outline-style: auto;
+  outline-color: #0048e2;
+  background-color: white;
 }
 /*# sourceMappingURL=index.css.map */

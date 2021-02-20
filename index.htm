@@ -4,59 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!--linking all the CSS modules here-->
-
   <link rel="stylesheet" href="/src/css/index.css">
-  <link rel="stylesheet" href="/src/css/header.css">
-  
   <title>Events.find</title>
 </head>
 <body>
   <div id="root">
-    
-    <!--header section-->
-    <div id="header-section" class="header">
-      <a href="/index.htm" id="home-option" class="header_option activated_option">Home</a>
-      <a href="" id="settings-option" class="header_option">Settings</a>
-      <a href="https://www.github.com/yashsehgal/events.find" id="github-option" class="header_option">GitHub</a>
-    </div>    <!--closing of header section-->
 
-    <!--events activity-->
-
-    <div id="events-activity" class="main_activity">
-      <!--search activity-->
-      <div id="search-event">
-        <input type="text" name="search" id="searchbar" class="search_bar"
-          placeholder="search for events, tags, locations">
+    <div class="cards">
+      <!--New events section-->
+      <div id="new-events" class="category">
+        <h2>New Events</h2>
+      </div>
+  
+      <div id="trending-events" class="category">
+        <h2>Trending Events</h2>
+      </div>
+  
+      <div id="upcoming-events" class="category">
+        <h2>Upcoming Events</h2>
       </div>
     </div>
 
-    <!--cards will be listed here-->
-    <div id="event-cards" class="event_cards">
-      <!-- JS will work here to fetch details from the API and show the events
-      accordingly -->
-      
+  </div> <!--this is the root ending-->
 
-      <!--trending events-->
-      <div id="trending-events" class="trending_events">
-        <!--JS ACTIVITY-->
-      </div>
-      
-      <!--upcoming events-->
-      <div class="upcoming_events" id="upcoming-events">
-        <!--JS ACTIVITY-->
-      </div>
-    </div>
-
-
-    
-
-  </div>      <!--end of root container-->
-
-
-  <!--linking all the JS files-->
-  <script src="/src/js/events.js"></script>
-  <script src="/src/js/index.js"></script>
+  <!--linking CSS files-->
+  <script src="src/js/events.js"></script>
 </body>
 </html>

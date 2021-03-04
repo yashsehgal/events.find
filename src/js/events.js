@@ -17,7 +17,7 @@ let new_events = document.createElement("div");
 new_events.className = "card_category";
 new_events.id = "new-events";
 
-fetch('/src/js/events_list.json')
+fetch('src/js/events_list.json')
   .then((res) => res.json())
   .then((res) => {
     

@@ -48,12 +48,13 @@ eventsContainer.id = "eventsContainer";
 let CardLayer = document.createElement("div");
 CardLayer.className = "cardLayer";
 
+let EventCard = document.createElement("div");
+EventCard.className = "card";
+
 fetch('/src/data.json').then((res) => res.json()).then((res) => {         /// This fetching method is only to fetch trending-events
 
   for (let data in res) {
     if (res[data].tag === "trending") {
-      let EventCard = document.createElement("div");
-      EventCard.className = "card";
   
       let EventCard_Title = document.createElement("h3");
       EventCard_Title.className = "event-title";
@@ -103,11 +104,9 @@ EVENTS_SECTION.append(eventsContainer);
 applicationContainer.append(EVENTS_SECTION);
 
 
-fetch('/src/data.json').then((res) => res.json()).then((res) => {             /// This fetching method is only to fetch upcoming  -events
+fetch('/src/data.json').then((res) => res.json()).then((res) => {             /// This fetching method is only to fetch upcoming-events
   for (let data in res) {
     if (res[data].tag === "upcoming") {
-      let EventCard = document.createElement("div");
-      EventCard.className = "card";
 
       let EventCard_Title = document.createElement("h3");
       EventCard_Title.className = "event-title";

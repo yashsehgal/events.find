@@ -1,0 +1,124 @@
+@import url("variables.css");
+body {
+  margin: 0;
+}
+
+.page {
+  margin: auto;
+  max-width: 1400px;
+}
+
+.header {
+  padding: 2em;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 8px 18px rgba(153, 153, 153, 0.212);
+          box-shadow: 4px 8px 18px rgba(153, 153, 153, 0.212);
+}
+
+.logo {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  float: left;
+}
+
+.logo:hover {
+  color: var(--color-blue);
+}
+
+.options {
+  float: right;
+}
+
+.header_option {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin-left: 2em;
+}
+
+.header_option:hover {
+  color: gray;
+}
+
+#landing-section {
+  position: relative;
+  margin-top: 6em;
+}
+
+.headline {
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Work Sans", sans-serif;
+  font-size: 48px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+  text-align: center;
+  color: #888888;
+  font-family: var(--general-description-font);
+}
+
+.button-layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  position: absolute;
+  bottom: -80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.primaryButton {
+  color: white;
+  background-color: var(--color-blue);
+  border: 0;
+  padding: 18px;
+  margin-right: 3em;
+  border-radius: 4px;
+  font-family: var(--general-description-font);
+}
+
+.primaryButton:hover {
+  -webkit-box-shadow: 2px 2px 12px rgba(70, 131, 180, 0.529);
+          box-shadow: 2px 2px 12px rgba(70, 131, 180, 0.529);
+  background-color: var(--color-blue-hover);
+}
+
+.secondaryButton {
+  color: var(--color-blue);
+  font-family: var(--general-description-font);
+  background-color: white;
+  border-color: var(--color-blue);
+  border: solid;
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.secondaryButton:hover {
+  -webkit-box-shadow: 2px 2px 12px rgba(70, 131, 180, 0.529);
+          box-shadow: 2px 2px 12px rgba(70, 131, 180, 0.529);
+  background-color: rgba(70, 131, 180, 0.129);
+}
+
+.section {
+  margin-top: 20em;
+}
+
+.sectionTitle {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.secondary-section {
+  margin-top: 8em;
+}
+/*# sourceMappingURL=main.css.map */

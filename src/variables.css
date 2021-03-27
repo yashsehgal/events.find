@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 :root {
-  --general-font-family: 'Raleway', sans-serif;
-  --general-description-font: Arial, Helvetica, sans-serif;
+  --general-font: "Poppins", sans-serif;
+  --general-description-font: "Work Sans", sans-serif;
+  --primary-color: rgb(51, 51, 51);
+  --secondary-color: white;
+  --color-blue: rgb(102, 102, 255);
+  --color-blue-hover: rgb(25, 25, 182);
 }
 /*# sourceMappingURL=variables.css.map */

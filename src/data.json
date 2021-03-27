@@ -6,7 +6,7 @@
     "end": "09/10/20",
     "organization": "Open Source India",
     "tag": "trending",
-    "location": "Online"
+    "mode": "online"
   },
   {
     "title": "Sunday JS: Getting to know JavaScript",
@@ -14,8 +14,8 @@
     "start": "11/10/20 10:00 AM",
     "end": "11/10/20 10:40 AM GMT+11",
     "organization": "Sydney Volunteer Programmers",
-    "tag": "new",
-    "location": "Online"
+    "tag": "upcoming",
+    "mode": "online"
   },
   {
     "title": "FOSDEM 2021",
@@ -24,7 +24,7 @@
     "end": "07/02/21",
     "organization": "FOSDEM dev community at University Brussels (ULB)",
     "tag": "upcoming",
-    "location": "Online"
+    "mode": "online"
   },
   {
     "title": "Codeheat",
@@ -33,7 +33,7 @@
     "end": "01/06/21",
     "organization": "FOSSASIA",
     "tag": "trending",
-    "location": "Online"
+    "mode": "online"
   },
   {
     "title": "FOSSCOMM",
@@ -41,8 +41,8 @@
     "start": "20/11/20",
     "end": "22/11/20",
     "organization": "University of Western Macedonia",
-    "tag": "new",
-    "location": "Online"
+    "tag": "trending",
+    "mode": "offline"
   },
   {
     "title": "DevFest India",
@@ -51,7 +51,7 @@
     "end": "18/10/20",
     "organization": "Google",
     "tag": "upcoming",
-    "location": "Online"
+    "mode": "offline"
   },
     {
     "title": "All Things Open",
@@ -59,7 +59,7 @@
     "start": "19/10/20",
     "end": "20/10/20",
     "organization": "All Things Open",
-    "tag": "new",
-    "location": "Online"
+    "tag": "trending",
+    "mode": "offline"
   }
 ]

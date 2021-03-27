@@ -51,7 +51,7 @@ CardLayer.className = "cardLayer";
 let EventCard = document.createElement("div");
 EventCard.className = "card";
 
-fetch('/src/data.json').then((res) => res.json()).then((res) => {         /// This fetching method is only to fetch trending-events
+fetch('data.json').then((res) => res.json()).then((res) => {         /// This fetching method is only to fetch trending-events
 
   for (let data in res) {
     if (res[data].tag === "trending") {
@@ -104,7 +104,7 @@ EVENTS_SECTION.append(eventsContainer);
 applicationContainer.append(EVENTS_SECTION);
 
 
-fetch('/src/data.json').then((res) => res.json()).then((res) => {             /// This fetching method is only to fetch upcoming-events
+fetch('data.json').then((res) => res.json()).then((res) => {             /// This fetching method is only to fetch upcoming-events
   for (let data in res) {
     if (res[data].tag === "upcoming") {
 

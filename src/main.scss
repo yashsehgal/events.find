@@ -5,7 +5,9 @@ body {
 }
 
 .page {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8em;
   max-width: 1400px;
 }
 
@@ -99,10 +101,24 @@ body {
   padding: 18px;
 }
 
-.secondaryButton:hover {
+.secondaryButton_Notification {
+  color: var(--color-blue);
+  font-family: var(--general-description-font);
+  background-color: white;
+  border-color: var(--color-blue);
+  border: solid;
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.secondaryButton_Notification:hover {
+  background-color: var(--color-blue-hover);
   box-shadow: 2px 2px 12px rgba(70, 131, 180, 0.529);
   background-color: rgba(70, 131, 180, 0.129);
+  color: white;
+  border: white solid;
 }
+
 
 .section {
   margin-top: 20em;
@@ -114,18 +130,88 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.secondary-section {
-  margin-top: 8em;
-}
-
-.application {
+.event-section {
   margin: auto;
 }
 
-.cardLayer {
-  display: block;
+.eventsLayer {
+  display: flex;
+  margin-bottom: 3em;
 }
 
-.card {
-  width: 26%;
+.eventCard {
+  width: 32%;
+  background-color: white;
+  box-sizing: border-box;
+  margin-left: 1em;
+  margin-right: 2em;
+  box-shadow: 2px 4px 18px rgba(128, 128, 128, 0.301);
+  padding: 2em;
+  border-radius: 4px;
+}
+
+.eventCard:hover {
+  background-color: rgb(235, 235, 235);
+  box-shadow: rgba(128, 128, 128, 0.501);
+}
+
+.title {
+  color: black;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+.duration {
+  color: gray;
+  font-size: small;
+  font-family: "Work Sans", sans-serif;
+}
+
+.mode {
+  color: var(--color-blue);
+  font-family: "Work Sans", sans-serif;
+}
+
+.tags {
+  color: gray;
+  font-family: "Work Sans", sans-serif;
+}
+
+.notification {
+  margin-top: 10em;
+  padding: 2em;
+  background-color: var(--color-blue);
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 8px;
+}
+
+.notification-title {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+
+.notification-description {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+
+
+/// MEDIA QUERIES
+@media(max-width: 1000px) {
+  .eventsLayer {
+    display: block;
+  }
+  .eventCard {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 60%;
+    text-align: center;
+  }
+  .notification {
+    text-align: center;
+  }
 }

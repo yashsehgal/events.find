@@ -24,7 +24,7 @@ LandingPageSection.innerHTML = `
 <p class="description" style="text-align: center;">Simply Search for Upcoming, Trending Events</p>
 <div class="button-layer">
   <button class="primaryButton">Search Events</button>
-  <button class="secondaryButton">Contribute on GitHub</button>
+  <button class="secondaryButton" onclick="window.open('https://www.github.com/yashsehgal/events.find/');">Contribute on GitHub</button>
 </div>
 `;
 
@@ -38,116 +38,91 @@ let EVENTS_SECTION = document.createElement("div");
 EVENTS_SECTION.className = "section";
 EVENTS_SECTION.id = "events-section";
 
-let sectionTitle = document.createElement("h2");
-sectionTitle.className = "sectionTitle";
-sectionTitle.innerHTML = "All Events";
-
-let eventsContainer = document.createElement("div");
-eventsContainer.id = "eventsContainer";
-
-let CardLayer = document.createElement("div");
-CardLayer.className = "cardLayer";
-
-let EventCard = document.createElement("div");
-EventCard.className = "card";
-
-fetch('data.json').then((res) => res.json()).then((res) => {         /// This fetching method is only to fetch trending-events
-
-  for (let data in res) {
-    if (res[data].tag === "trending") {
-  
-      let EventCard_Title = document.createElement("h3");
-      EventCard_Title.className = "event-title";
-      EventCard_Title.innerHTML = res[data].title;
-
-      let EventCard_Duration = document.createElement("p");
-      EventCard.className = "event-duration";
-      EventCard_Duration.innerHTML = `${res[data].start} - ${res[data].end}`;
-
-      let EventCard_Mode = document.createElement("p");
-      EventCard_Mode.className = "event-mode";
-      if (res[data].mode === "online") {
-        EventCard_Mode.style.color = "blue";
-      } else if (res[data].mode === "offline") {
-        EventCard_Mode.style.color = "orange";
-      }
-
-      EventCard_Mode.innerHTML = res[data].mode;
-
-      let EventCard_Tag = document.createElement("p");
-      EventCard_Tag.className = "event-tag";
-      EventCard_Tag.innerHTML = `#${res[data].tag}`;
-
-      let EventCard_Button = document.createElement("button");
-      EventCard_Button.className = "primaryButton";
-      EventCard_Button.innerHTML = "Register Now";
-      EventCard_Button.onclick = function redirectToEventWebsite() {
-        window.open(res[data].website);
-      }
-
-      EventCard.append(EventCard_Title);
-      EventCard.append(EventCard_Duration);
-      EventCard.append(EventCard_Mode);
-      EventCard.append(EventCard_Tag);
-      EventCard.append(EventCard_Button);
-      CardLayer.append(EventCard);
-    }
-  } 
-});
-
-eventsContainer.append(CardLayer);
-
-
-EVENTS_SECTION.append(sectionTitle);
-EVENTS_SECTION.append(eventsContainer);
+EVENTS_SECTION.innerHTML = `
+    <div class="eventsLayer">
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.in');">Register Now</button>
+      </div>
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.in');">Register Now</button>
+      </div>
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.in');">Register Now</button>
+      </div>
+    </div>
+    <div class="eventsLayer">
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.in');">Register Now</button>
+      </div>
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.inn');">Register Now</button>
+      </div>
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.in');">Register Now</button>
+      </div>
+    </div>
+    <div class="eventsLayer">
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.in');">Register Now</button>
+      </div>
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.in');">Register Now</button>
+      </div>
+      <div class="eventCard">
+        <h3 class="title">ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE</h3>
+        <p class="duration">08/10/20 - 09/10/20</p>
+        <p class="mode">Online</p>
+        <p class="tags">#trending</p>
+        <button class="primaryButton" onclick="window.open('https://www.opensourceindia.in');">Register Now</button>
+      </div>
+    </div>
+`;
 
 applicationContainer.append(EVENTS_SECTION);
 
-
-fetch('data.json').then((res) => res.json()).then((res) => {             /// This fetching method is only to fetch upcoming-events
-  for (let data in res) {
-    if (res[data].tag === "upcoming") {
-
-      let EventCard_Title = document.createElement("h3");
-      EventCard_Title.className = "event-title";
-      EventCard_Title.innerHTML = res[data].title;
-
-      let EventCard_Duration = document.createElement("p");
-      EventCard.className = "event-duration";
-      EventCard_Duration.innerHTML = `${res[data].start} - ${res[data].end}`;
-
-      let EventCard_Mode = document.createElement("p");
-      EventCard_Mode.className = "event-mode";
-      if (res[data].mode === "online") {
-        EventCard_Mode.style.color = "blue";
-      } else if (res[data].mode === "offline") {
-        EventCard_Mode.style.color = "orange";
-      }
-
-      EventCard_Mode.innerHTML = res[data].mode;
-
-      let EventCard_Tag = document.createElement("p");
-      EventCard_Tag.className = "event-tag";
-      EventCard_Tag.innerHTML = `#${res[data].tag}`;
-
-      let EventCard_Button = document.createElement("button");
-      EventCard_Button.className = "primaryButton";
-      EventCard_Button.innerHTML = "Register Now";
-      EventCard_Button.onclick = function redirectToEventWebsite() {
-        window.open(res[data].website);
-      }
-
-      EventCard.append(EventCard_Title);
-      EventCard.append(EventCard_Duration);
-      EventCard.append(EventCard_Mode);
-      EventCard.append(EventCard_Tag);
-      EventCard.append(EventCard_Button);
-      CardLayer.append(EventCard);
-    }
-  }
-});
-
-
 app.append(applicationContainer);
+
+let notification = document.createElement("div");
+notification.className = "notification";
+notification.innerHTML = `
+<h2 class="notification-title">Want to Contribute to this Project?</h2>
+<p class="notification-description">This is just a personal project of mine, but if you want to help/contribute, you are invited! Let's do some work together</p>
+<button class="secondaryButton_Notification" onclick="window.open('https://www.github.com/yashsehgal/events.find/')">Check Source Code on GitHub</button>
+`;
+
+app.appendChild(notification);
+
 
 document.getElementById("root").appendChild(app);
